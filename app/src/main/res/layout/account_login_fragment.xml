@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="UserLoginViewModel"
+            type="com.colin.viewmodel.UserLoginViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/fl_dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <include-->
+<!--            layout="@layout/title_bar_login"-->
+<!--            ></include>-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dl_user_avater"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:setImgUrl="@{UserLoginViewModel.imgUrl}"
+                android:src="@drawable/icon_ygst" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/dl_account"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="@={UserLoginViewModel.edit_account}"
+                android:addTextChangedListener = "@{UserLoginViewModel.accChange}" />
+
+            <EditText
+                android:id="@+id/dl_password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:selectAllOnFocus="true"
+                android:text="@={UserLoginViewModel.edit_password}"
+                />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/dl_verificationCode"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_vcode"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:text="@={UserLoginViewModel.edit_captcha}"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/dl_img_verify_code"
+                    android:background="@color/black"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    app:setCaptcha="@{UserLoginViewModel.img_Captcha_url}"
+                    android:onClick="@{UserLoginViewModel.refreshCaptcha}">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dl_btn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/common_confirm_text_color"
+                android:text="@string/action_sign_in"
+                android:onClick="@{UserLoginViewModel.login}"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用快捷登陆方式"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+        <color name="colorPrimary">#F5A623</color>
+        <color name="colorPrimaryDark">#F5A623</color>
+        <color name="colorAccent">#F5A623</color>
+        <color name="colorGrey">#7B7B7B</color>
+
+        <color name="colorSelected">#EEF1EE</color>
+
+        <color name="colorTabSelected">#ffffff</color>
+        <color name="colorTabNormal">#aaffffff</color>
+        <color name="colorTmall">#D0021B</color>
+        <color name="colorPageBg">#EFEEEE</color>
+        <color name="colorEEEEEE">#EFEEEE</color>
+
+        <color name="pink">#FA7299</color>
+        <color name="colorVip">#FA7299</color>
+
+        <color name="green">#2BA245</color>
+
+        <color name="white">#fff</color>
+
+
+        <color name="black">#000</color>
+        <!-- 默认的文本颜色 -->
+        <color name="default_font_color">#8A000000</color>
+        <!-- 对话框确认按钮的文本颜色 -->
+        <color name="common_confirm_text_color">#007AFF</color>
+
+        <!-- 按钮禁用时的颜色 -->
+        <color name="common_button_disable_color">#BBBBBB</color>
+
+
+
+
+</resources>
