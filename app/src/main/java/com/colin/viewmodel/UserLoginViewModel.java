@@ -207,5 +207,13 @@ public class UserLoginViewModel {
 
     }
 
+    public void ToMainActivity(View view){
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setClass(view.getContext(), MainActivity.class);
+        view.getContext().startActivity(intent);
+        mContext.finish();
+    }
+
 }
 

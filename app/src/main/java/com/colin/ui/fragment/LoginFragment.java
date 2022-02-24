@@ -21,7 +21,6 @@ import com.colin.ygst.R;
  */
 public class LoginFragment extends Fragment {
 
-    final public static String epUsers="体验用户";
 
     private LoginAccountFragment loginAccountFragment =new LoginAccountFragment();
     //两个选择1.跳转至输入手机号页面
