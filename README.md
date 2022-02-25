@@ -1,9 +1,14 @@
 # ygst_sob_login_demo_mvvm 项目介绍（MVVM 框架）
 -------------------------------
 
-这是没有使用MVVM框架的版本，想简单点的可以直接去这里 https://github.com/gsrkuang/ygst_sob_login_demo
+使用MVC（最简单）的版本，想简单点的可以直接去这里 https://github.com/gsrkuang/ygst_sob_login_demo
 
-MVP框架的版本，直接去这里 https://github.com/gsrkuang/ygst_sob_login_demo_mvp
+使用MVP（java）框架的版本，直接去这里 https://github.com/gsrkuang/ygst_sob_login_demo_mvp
+
+使用MVP（java）框架的版本，去这里 https://github.com/gsrkuang/ygst_sob_login_demo_mvp
+
+使用MVVM（kotlin）框架的版本，去这里 https://github.com/gsrkuang/kotlin_ygst_sob_login_demo_mvvm
+
 
 不知道有没有小伙伴，跟我一样，刚刚接触阳光沙滩就卡在了接入登陆API上的，这个项目主要是一个简单的登录api接入例子，代码比较简单。
 
