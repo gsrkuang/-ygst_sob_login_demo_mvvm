@@ -179,7 +179,7 @@ public class UserLoginViewModel {
 //                response.headers().
 
                 LoginBean loginBean = response.body();
-                if (loginBean != null || "".equals(loginBean)) {
+                if (loginBean != null || !"".equals(loginBean)) {
                     showTips(loginBean);
                 }
                 if (loginBean.isSuccess()) {
@@ -205,14 +205,6 @@ public class UserLoginViewModel {
         Log.e("+++login", loginBean.toString());
         Toast.makeText(mContext, loginBean.getMessage(), Toast.LENGTH_SHORT).show();
 
-    }
-
-    public void ToMainActivity(View view){
-        Intent intent = new Intent();
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.setClass(view.getContext(), MainActivity.class);
-        view.getContext().startActivity(intent);
-        mContext.finish();
     }
 
 }
