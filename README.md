@@ -3,8 +3,6 @@
 
 使用MVC（最简单）的版本，想简单点的可以直接去这里 https://github.com/gsrkuang/ygst_sob_login_demo
 
-使用MVP（java）框架的版本，直接去这里 https://github.com/gsrkuang/ygst_sob_login_demo_mvp
-
 使用MVP（java）框架的版本，去这里 https://github.com/gsrkuang/ygst_sob_login_demo_mvp
 
 使用MVVM（kotlin）框架的版本，去这里 https://github.com/gsrkuang/kotlin_ygst_sob_login_demo_mvvm
